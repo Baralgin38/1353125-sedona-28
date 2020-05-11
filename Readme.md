@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Емельянов](https://up.htmlacademy.ru/htmlcss/28/user/1353125).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Ясель] (https://htmlacademy.ru/profile/yasel).
 
 ---
 
