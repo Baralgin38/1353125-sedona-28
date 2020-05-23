@@ -25,11 +25,12 @@
 
       <main>
 
+        <h1 class="visually-hidden">Городок Седона</h1>
+
         <section>
-          <h1 class="visually-hidden">Городок Седона</h1>  <!--Перетащить h1 за секшн, а секшн озаглавить h2 "Добро пожаловать в Седону" ?-->
+          <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
           <img src="img/main_image.jpg" width="1200" height="509" alt="">
-          <img src="img/intro-mask.svg" width="1200" height="57" alt="">
-          <img src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в Седону">
+          <img src="img/welcome.svg" width="457" height="351" alt="">
         </section>
 
         <section>
@@ -158,11 +159,15 @@
             </p>
             <p>
               <label for="adults">Взрослые:</label>
-              <input type="text" id="adults" name="adults" placeholder="2">  <!-- правильно ли оформить этот input через text ? Потому что number даст другой счетчик набора , не схожий с макетом -->
+              <button type="button">-</button>
+              <input type="number" id="adults" name="adults" placeholder="2">
+              <button type="button">+</button>
             </p>
             <p>
               <label for="children">Дети:</label>
-              <input type="text" id="children" name="children" placeholder="0">
+              <button type="button">-</button>
+              <input type="number" id="children" name="children" placeholder="0">
+              <button type="button">+</button>
             </p>
             <button type="submit">Найти</button>
           </form>
@@ -177,7 +182,7 @@
       <footer>
         <p>
           #VisitSedona<br>
-          <span>Тел:</span> +7(495) 666-02-66 <!-- оборачивать ли в ссылку ? -->
+          <span>Тел:</span> <a href="tel:+74956660266">+7(495) 666-02-66</a> 
         </p>
 
         <section>
