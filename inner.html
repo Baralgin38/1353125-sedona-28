@@ -29,7 +29,44 @@
 
         <section>
           <h2 class="visually-hidden">Фильтр поиска</h2>
-          <!--здесь будет форма-->
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <input type="checkbox" id="swimmingpool" name="swimmingpool" checked>
+              <label for="">Бассеин</label>
+              <input type="checkbox" id="parking" name="parking">
+              <label for="parking">Парковка</label>
+              <input type="checkbox" id="wifi" name="wifi">
+              <label for="wifi">Wi-fi</label>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <input type="checkbox" id="filter-hotel" name="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+              <input type="checkbox" id="filter-motel" name="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+              <input type="checkbox" id="filter-apartments" name="filter-apartments" checked>
+              <label for="filter-apartments">Апартаменты</label>
+            </fieldset>
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>  <!--Параграфы в диве потом будут инлаин-блок, а потом когда смогу в js есть план заметить их на оутпут ,чтобы был вывод из рэнджа-->
+              <div>
+                <p>от 0</p>
+                <p>до 3000</p>
+              </div>
+              <input type="range" min="1" max="3000" step="1">
+              <button type="submit">Показать</button>
+            </fieldset>
+          </form>
+          <div>  <!--И еще сомневаюсь в этом диве , но кажется он должен быть за формой-->
+            <p>Найдено:3</p>
+            <ul>
+              <li>Сортировка:</li>
+              <li>По цене</li>
+              <li>По типу</li>
+              <li>По рейтингу</li>
+            </ul>
+          </div>
         </section>
 
         <section>
