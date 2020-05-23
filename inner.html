@@ -32,24 +32,36 @@
           <form action="https://echo.htmlacademy.ru" method="GET">
             <fieldset>
               <legend>Инфраструктура:</legend>
-              <input type="checkbox" id="swimmingpool" name="swimmingpool" checked>
-              <label for="">Бассеин</label>
-              <input type="checkbox" id="parking" name="parking">
-              <label for="parking">Парковка</label>
-              <input type="checkbox" id="wifi" name="wifi">
-              <label for="wifi">Wi-fi</label>
+              <div>
+                <input type="checkbox" id="swimmingpool" name="swimmingpool" checked>
+                <label for="swimmingpool">Бассеин</label>
+              </div>
+              <div>
+                <input type="checkbox" id="parking" name="parking">
+                <label for="parking">Парковка</label>
+              </div>
+              <div>
+                <input type="checkbox" id="wifi" name="wifi">
+                <label for="wifi">Wi-fi</label>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Тип жилья:</legend>
-              <input type="checkbox" id="filter-hotel" name="filter-hotel" checked>
-              <label for="filter-hotel">Гостиница</label>
-              <input type="checkbox" id="filter-motel" name="filter-motel" checked>
-              <label for="filter-motel">Мотель</label>
-              <input type="checkbox" id="filter-apartments" name="filter-apartments" checked>
-              <label for="filter-apartments">Апартаменты</label>
+              <div>
+                <input type="checkbox" id="filter-hotel" name="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </div>
+              <div>
+                <input type="checkbox" id="filter-motel" name="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </div>
+              <div>
+                <input type="checkbox" id="filter-apartments" name="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </div>
             </fieldset>
             <fieldset>
-              <legend>Стоимость в сутки (Р):</legend>  <!--Параграфы в диве потом будут инлаин-блок, а потом когда смогу в js есть план заметить их на оутпут ,чтобы был вывод из рэнджа-->
+              <legend>Стоимость в сутки (Р):</legend>  
               <div>
                 <p>от 0</p>
                 <p>до 3000</p>
@@ -58,14 +70,12 @@
               <button type="submit">Показать</button>
             </fieldset>
           </form>
-          <div>  <!--И еще сомневаюсь в этом диве , но кажется он должен быть за формой-->
+          <div>
             <p>Найдено:3</p>
-            <ul>
-              <li>Сортировка:</li>
-              <li>По цене</li>
-              <li>По типу</li>
-              <li>По рейтингу</li>
-            </ul>
+              <p>Сортировка:</p>
+              <button type="button">По цене</button>
+              <button type="button">По типу</button>
+              <button type="button">По рейтингу</button>
           </div>
         </section>
 
@@ -77,8 +87,8 @@
               <h3>Amara resort & SPA</h3>
               <p>Гостиница</p>
               <p>от 4000 Р.</p>
-              <button type="button">Подробнее</button>  <!--Мне кажется что это должны быть ссылки, обе -->
-              <button type="button">Забронировать</button>
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
               <span>Рейтинг: 8,5</span>
             </li>
             <li>
@@ -86,8 +96,8 @@
               <h3>Desert quail inn</h3>
               <p>Мотель</p>
               <p>от 3000 Р.</p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
               <span>Рейтинг: 8,9</span>
             </li>
             <li>
@@ -95,8 +105,8 @@
               <h3>Villas at poco diablo</h3>
               <p>Апартаменты</p>
               <p>от 2000 Р.</p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
               <span>Рейтинг: 9,2</span>
             </li>
           </ul>
@@ -106,7 +116,7 @@
       <footer>
         <p>
           #VisitSedona<br>
-          <span>Тел:</span> +7(495) 666-02-66
+          <span>Тел:</span> <a href="tel:+74956660266">+7(495) 666-02-66</a>
         </p>
   
         <section>
