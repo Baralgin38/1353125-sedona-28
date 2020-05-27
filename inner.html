@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   
   <body>
-    <div>
+    <div class="wrapper">
     
-      <header>
-        <nav>
-          <a href="index.html">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-logo" href="index.html">
             <img src="img/logo.svg" width="138" height="70" alt="Перейти на главную страницу">
           </a>
-          <ul>
+          <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
@@ -27,7 +29,7 @@
 
         <h1 class="visually-hidden">Поиск отелей</h1>
 
-        <section>
+        <section class="filter">
           <h2 class="visually-hidden">Фильтр поиска</h2>
           <form action="https://echo.htmlacademy.ru" method="GET">
             <fieldset>
@@ -70,7 +72,7 @@
               <button type="submit">Показать</button>
             </fieldset>
           </form>
-          <div>
+          <div class="sorting-box">
             <p>Найдено:3</p>
               <p>Сортировка:</p>
               <button type="button">По цене</button>
@@ -79,57 +81,59 @@
           </div>
         </section>
 
-        <section>
+        <section class="hotels">
           <h2 class="visually-hidden">Отели</h2>
-          <ul>
-            <li>
+          <ul class="hotels-list">
+            <li class="hotels-list-item">
               <img src="img/amara.jpg" width="135" height="90" alt="Картинка отеля">
               <h3>Amara resort & SPA</h3>
               <p>Гостиница</p>
               <p>от 4000 Р.</p>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+              <a href="#" class="details">Подробнее</a>
+              <a href="#" class="reservation">Забронировать</a>
               <span>Рейтинг: 8,5</span>
             </li>
-            <li>
+            <li class="hotels-list-item">
               <img src="img/desert.jpg" width="135" height="90" alt="Картинка отеля">
               <h3>Desert quail inn</h3>
               <p>Мотель</p>
               <p>от 3000 Р.</p>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+              <a href="#" class="details">Подробнее</a>
+              <a href="#" class="reservation">Забронировать</a>
               <span>Рейтинг: 8,9</span>
             </li>
-            <li>
+            <li class="hotels-list-item">
               <img src="img/Villas.jpg" width="135" height="90" alt="Картинка отеля">
               <h3>Villas at poco diablo</h3>
               <p>Апартаменты</p>
               <p>от 2000 Р.</p>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+              <a href="#" class="details">Подробнее</a>
+              <a href="#" class="reservation">Забронировать</a>
               <span>Рейтинг: 9,2</span>
             </li>
           </ul>
         </section>
       </main>
 
-      <footer>
-        <p>
+      <footer class="contacts">
+        <p class="contacts-text">
           #VisitSedona<br>
-          <span>Тел:</span> <a href="tel:+74956660266">+7(495) 666-02-66</a>
+          Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a>
         </p>
   
-        <section>
+        <section class="social">
           <h2 class="visually-hidden">Соц. сети</h2>
-          <ul>
+          <ul class="social-list">
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Youtube</a></li>
           </ul>
         </section>
         
-        <p>website by</p>
-        <p><a href="#"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип академии"></a></p>
+        <div class="footer-logo-box">
+          <p>website by</p>
+          <p><a href="#"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип академии"></a></p>
+        </div>
       </footer>
     </div>
   </body>
