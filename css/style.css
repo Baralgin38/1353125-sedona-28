@@ -102,7 +102,7 @@ img {
   color: var(--alpha-black);
 }
 
-/* about */ /* index */
+ /* index */ /* about */
 
 .about-text {
   font-size: 21px;
@@ -242,14 +242,49 @@ background-color: var(--deep-brown);
 }
 */
 
-/* inner */
-
+/* inner */ /* filter */
 .filter {
-  display: none;
+  color: var(--basic-white);
+  background-image: url('../img/background.jpg');
 }
+
+.filter-form {
+  line-height: 21px;
+}
+
+fieldset {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sorting-box {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-box p:nth-of-type(1) {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+/* hotels */
 
 .hotels-list {
   list-style: none;
+}
+
+.hotels-list-item a {
+  color: var(--basic-black);
+}
+
+.hotels-list-item a:hover,
+.hotels-list-item a:focus {
+  color: var(--basic-blue);
+}
+
+.hotels-list-item a:active {
+  color: var(--alpha-black);
 }
 
 .hotels-list-item h3 {
