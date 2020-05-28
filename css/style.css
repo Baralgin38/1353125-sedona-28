@@ -33,13 +33,13 @@
   --light-gray: #BDBBBC;
   --light-gray-index: #EEEEEE;
   --special-color: #666666;
+  --shadow-color: rgba(0,1,1,0.2);
 }
 
 /* Global */
 
 body {
   min-width: 1280px;
-  margin: 0;
   padding: 0;
   font-family: "PT sans", "Arial", sans-serif;
   font-size: 14px;
@@ -62,9 +62,9 @@ img {
 /* wrapper */
 
 .wrapper {
-  min-width: 1200px;
-  padding-left: 40px;
-  padding-right:40px;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px var(--shadow-color);
 }
 
 .visually-hidden {
@@ -95,6 +95,7 @@ img {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
+  outline: none;
   color: var(--basic-blue);
 }
 
@@ -187,6 +188,7 @@ font-weight: bold;
 } 
 
 .button-search {
+  font-family: inherit;
   border: none;
   color: var(--basic-white);
   background-color: var(--basic-brown);
@@ -194,7 +196,8 @@ font-weight: bold;
 
 .button-search:hover,
 .button-search:focus {
-background-color: var(--deep-brown);
+  outline: none;
+  background-color: var(--deep-brown);
 }
 
 .button-search:active {
@@ -220,9 +223,9 @@ background-color: var(--deep-brown);
 }
 
 .contacts-text a {
-  color: var(--basic-black)
+  color: var(--basic-black);
 }
-/*
+
 .contacts-text a:hover,
 .contacts-text a:focus {
   color: var(--basic-blue);
@@ -232,15 +235,15 @@ background-color: var(--deep-brown);
   color: var(--alpha-black);
 }
 
-.logo-link img:hover,
-.logo-link img:focus {
+.footer-logo-box a:hover,
+.footer-logo-box a:focus {
   color: var(--basic-blue);
 }
 
-.logo-link img:active {
+.footer-logo-box a:active {
   color: var(--light-gray);
 }
-*/
+
 
 /* inner */ /* filter */
 .filter {
@@ -257,6 +260,14 @@ fieldset {
   font-weight: bold;
 }
 
+.filter-button {
+  font-family: inherit;
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
+  background-color: transparent;
+  
+}
+
 .sorting-box {
   font-size: 12px;
   line-height: 18px;
@@ -266,6 +277,34 @@ fieldset {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+}
+
+.sorting-box button {
+  font-family: inherit;
+  border: none; 
+  border-bottom: 1px dotted var(--basic-blue);
+  color: var(--alpha-black);
+  background-color: var(--basic-white);
+}
+
+.sorting-box button:hover,
+.sorting-box button:focus {
+  outline: none;
+  color: var(--basic-blue);
+}
+
+.sorting-box button:active {
+  border:none;
+  color: var(--basic-black);
+}
+
+.sorting-box button.current {
+  border:none;
+  color: var(--basic-blue);
+}
+
+.sorting-box button.current:active {
+  color: var(--basic-black);
 }
 
 /* hotels */
@@ -312,6 +351,7 @@ fieldset {
 
 .hotels .details:hover,
 .hotels .details:focus {
+  outline: none;
   background-color: var(--deep-blue);
 }
 
@@ -329,6 +369,7 @@ fieldset {
 
 .hotels .reservation:hover,
 .hotels .reservation:focus {
+  outline: none;
   background-color: var(--deep-brown);
 }
 
