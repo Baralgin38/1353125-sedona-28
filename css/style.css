@@ -34,6 +34,7 @@
   --light-gray-index: #EEEEEE;
   --special-color: #666666;
   --shadow-color: rgba(0,1,1,0.2);
+  --body-color: #888888;
 }
 
 /* Global */
@@ -47,7 +48,7 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-black);
-  background-color: var(--basic-white);
+  background-color: var(--body-color);
 }
 
 a {
@@ -64,7 +65,8 @@ img {
 .wrapper {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 15px var(--shadow-color);
+  background-color: var(--basic-white);
+  box-shadow: 0 5 15px var(--shadow-color);
 }
 
 .visually-hidden {
@@ -95,7 +97,6 @@ img {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  outline: none;
   color: var(--basic-blue);
 }
 
@@ -196,7 +197,6 @@ font-weight: bold;
 
 .button-search:hover,
 .button-search:focus {
-  outline: none;
   background-color: var(--deep-brown);
 }
 
@@ -289,7 +289,6 @@ fieldset {
 
 .sorting-box button:hover,
 .sorting-box button:focus {
-  outline: none;
   color: var(--basic-blue);
 }
 
@@ -351,7 +350,6 @@ fieldset {
 
 .hotels .details:hover,
 .hotels .details:focus {
-  outline: none;
   background-color: var(--deep-blue);
 }
 
@@ -369,7 +367,6 @@ fieldset {
 
 .hotels .reservation:hover,
 .hotels .reservation:focus {
-  outline: none;
   background-color: var(--deep-brown);
 }
 
