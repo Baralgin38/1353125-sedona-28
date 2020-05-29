@@ -34,7 +34,6 @@
   --light-gray-index: #EEEEEE;
   --special-color: #666666;
   --shadow-color: rgba(0,1,1,0.2);
-  --body-color: #888888;
 }
 
 /* Global */
@@ -48,7 +47,7 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-black);
-  background-color: var(--body-color);
+  background-color: var(--basic-gray);
 }
 
 a {
