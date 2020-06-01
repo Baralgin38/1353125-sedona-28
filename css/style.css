@@ -372,3 +372,98 @@ fieldset {
 .hotels .reservation:active {
   background-color: var(--intense-brown);
 }
+
+/* layout */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.site-navigation li {
+  margin-bottom: 29px;
+  margin-top: 15px;
+  flex-shrink: 0;
+  
+}
+
+.site-navigation li:nth-of-type(1) {
+  margin-left: 72px;
+  margin-right: 134px;
+}
+
+.site-navigation li:nth-of-type(2) {
+  margin-right: 200px;
+}
+
+.site-navigation li:nth-of-type(3) {
+  margin-left: 200px;
+  margin-right: 147px;
+}
+
+.site-navigation li:nth-of-type(4) {
+  margin-right: 72px;
+}
+
+.main-logo {
+  display:none;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text {
+  flex-basis: 80px;
+}
+
+.features-text {
+  flex-basis: 26px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hotels-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels-list-item {
+  display:flex;
+  justify-content: space-between;
+  flex-basis: 150px;
+}
+
+.hotels-list-item span {
+  align-self: end;
+  margin-bottom: 30px;
+  margin-right: 73px;
+}
