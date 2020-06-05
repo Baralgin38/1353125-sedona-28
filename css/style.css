@@ -275,7 +275,10 @@ text-align: center;
   border: none;
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  padding: 30px 125px;
+  /*padding: 30px 125px;*/
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 568px;
 }
 
 .button-search:hover,
@@ -296,7 +299,7 @@ text-align: center;
 
 .search-form {
   position: absolute;
-  left: 300px;
+  left: 316px;
   
   font-size: inherit;
   line-height: inherit;
@@ -441,14 +444,25 @@ text-align: center;
   line-height: 21px;
 }
 
-fieldset {
+.filter-form fieldset {
   font-size: 16px;
   font-weight: normal;
   border: none;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 26px;
 }
 
-legend {
+.filter-form legend {
   font-weight: bold;
+}
+
+.form-container1 legend {
+  margin-bottom: 24px;
+}
+
+.form-container1 div {
+  margin-bottom: 23px;
 }
 
 .filter-button {
@@ -505,6 +519,10 @@ legend {
   margin: 0;
 }
 
+.hotels-list-item {
+  border-bottom: 1px solid var(--gray-border);
+}
+
 .hotels-list-item a {
   color: var(--basic-black);
 }
@@ -535,9 +553,13 @@ legend {
 .hotels-list-item p {
   line-height: 21px;
   color: var(--dark-brown);
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.hotels-container-firstbox,
+.hotels-container-secondbox {
   display: inline-block;
-  margin:.hotelspx;
-  margin-right: 35px;  
 }
 
 .hotels-list-item span {
@@ -546,6 +568,10 @@ legend {
   background-color: var(--basic-gray);
   margin-bottom: 30px;
   margin-right: 73px;
+  padding-top: 3px;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  padding-right: 12px;
 }
 
 .hotels a.details {
@@ -732,13 +758,6 @@ legend {
 .filter-form {
   display: flex;
   justify-content: space-between;
-}
-
-.filter-form fieldset {
-  margin: 0px;
-  padding: 0px;
-  margin-top: 26px;
-  margin-bottom: 32px;
 }
 
 .form-container1 {
