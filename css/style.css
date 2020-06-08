@@ -68,7 +68,11 @@ img {
   width: 1200px;
   margin: 0 auto;
   background-color: var(--basic-white);
-  box-shadow: 0 5 15px var(--shadow-color);
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.wrapper-index {
+  position: relative;
 }
 
 .visually-hidden {
@@ -115,8 +119,8 @@ img {
   font-weight: bold;
   text-align: center;
   padding-bottom: 28px;
-  margin-top: 42.5px;
-  margin-bottom: 16.5px;
+  margin-top: 33px;
+  margin-bottom: 16.5px; 
 }
 
 .features-text {
@@ -257,12 +261,12 @@ text-align: center;
   font-weight: bold;
   margin: 0;
   margin-top: 58px;
-  margin-bottom: 38px;
+  margin-bottom: 16.5px;
 }
 
 .search p {
   color: var(--dark-brown);
-  margin-bottom: 51px;
+  margin-bottom: 46.5px;
   text-align: center;
 } 
 
@@ -275,7 +279,6 @@ text-align: center;
   border: none;
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  /*padding: 30px 125px;*/
   padding-top: 30px;
   padding-bottom: 30px;
   width: 568px;
@@ -306,10 +309,10 @@ text-align: center;
   font-weight: bold;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  padding: 55px;
-
   box-sizing: border-box;
+  padding: 55px;
   width: 568px;
+  box-shadow: 0 7px 15px var(--shadow-color);
 }
 
 .arrival-date {
@@ -321,11 +324,12 @@ text-align: center;
 }
 
 .adults {
-  margin-right: 33px;
+  margin-right: 36px;
 }
 
 .children {
   margin-right: 22px;
+  margin-left: 63px;
 }
 
 .search-form p {
@@ -335,6 +339,8 @@ text-align: center;
 
 .search-form input {
   padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border: 0;
   background-color: var(--basic-gray);
 }
@@ -345,13 +351,11 @@ text-align: center;
 
 .search-form input:focus {
   background-color: var(--basic-white);
-  border: 2px solid var(--gray-border);
+  outline: 2px solid var(--gray-border);
 }
 
 .search-form .arrival-input,
 .search-form .departure-input {
-  padding-top: 6px;
-  padding-bottom: 6px;
   padding-left: 12px;
   margin-bottom: 30px;
   box-sizing: border-box;
@@ -363,30 +367,38 @@ text-align: center;
 }
 
 .search-form-firstbox button {
-  padding: 0;
+  padding: 10px;
   border: 0;
 }
 
-.search-form-firstbox input {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  margin-bottom: 54px;
+.search-form-firstbox .button-minus {
+  margin-right: -4px;
+  background-color: var(--basic-gray);
+}
 
-  width: 114px;
+.search-form-firstbox .button-plus {
+  margin-left: -4px;
+  background-color: var(--basic-gray);
+}
+
+.search-form-firstbox input {
+  text-align: center;
+  margin-bottom: 58px;
+  width: 54px;
 }
 
 .button-to-find {
   font-size: 21px;
   line-height: inherit;
-  font-weight: inherit;
+  font-weight: inherit; 
+  text-transform: inherit;
   border: none;
   color: var(--basic-white);
   background-color: var(--basic-blue);
+  box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 182px;
-  padding-right: 181px;
-
+  width: 458px;
   flex-grow: 1;
 }
 
@@ -398,6 +410,17 @@ text-align: center;
 .button-to-find:active {
   color: var(--alpha-white);
   background-color: var(--intense-blue);
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.search-popup input[placeholder] {
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  color: var(--basic-black);
 }
 
 /* footer */
@@ -433,6 +456,12 @@ text-align: center;
   color: var(--light-gray);
 }
 
+.contacts-index {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  min-height: 120px;
+}
 
 /* inner */ /* filter */
 .filter {
@@ -465,12 +494,63 @@ text-align: center;
   margin-bottom: 23px;
 }
 
+div.wifi,
+div.filter-apartments {
+  margin-bottom: 36px;
+}
+
+.form-container2 legend {
+  margin-bottom: 10px
+}
+
+.form-container2-price {
+  display: flex;
+  width: 314px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+}
+
+.form-container2-price p {
+  position: relative;
+  margin: 0;
+}
+
+.form-container2-price p:nth-of-type(1) {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 64px;
+  margin-right: 57px; 
+}
+
+.form-container2-price p:nth-of-type(1)::after {
+  position: absolute;
+  left: 158px;
+  content: " ";
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-white);
+}
+
+.form-container2-price p:nth-of-type(2) {
+  padding-top: 6px;
+  padding-right: 37px;
+  padding-bottom: 6px;
+  margin-left: 54px;
+}
+
 .filter-button {
   font-family: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 32px;
+  margin-left: 86px;
   border: 2px solid var(--basic-white);
+  border-radius: 2px;
   color: var(--basic-white);
   background-color: transparent;
-  
+  width: 137px;
 }
 
 .sorting-box {
@@ -610,6 +690,15 @@ text-align: center;
   background-color: var(--intense-brown);
 }
 
+.hotels-list-item:nth-of-type(2) h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.hotels-list-item:nth-of-type(2) .hotels-container-img {
+  margin-top: 22px;
+}
+
 /* layout */
 
 .page {
@@ -661,8 +750,29 @@ text-align: center;
 .main-logo {
   position: absolute;
   top: 0px;
-  left: 571px;
+  left: 533px;
   z-index: 2;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro-logo {
+  position: absolute;
+  top: 77px;
+  left: 372px;
+}
+
+.intro:after {
+  content: " ";
+  width: 100%;
+  height: 58px;
+  position: absolute;
+  bottom: 5px;
+  background-image: url('../img/intro-mask.svg');
+  background-repeat: no-repeat;
+  background-position: center center; 
 }
 
 .about-container {
@@ -742,7 +852,7 @@ text-align: center;
 }
 
 .hotels-list-item {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-basis: 150px;
 }
@@ -784,27 +894,22 @@ text-align: center;
   display: flex;
   justify-content: start;
   align-items: center;
+  border-bottom: 1px solid var(--gray-border);
 }
 
 .sorting-box p:nth-of-type(1) {
-  margin-left: 73px;
+  margin-top: 26px;
+  margin-left: 74px;
   margin-right: 46px;
+  margin-bottom: 34px;
 }
 
 .sorting-box p:nth-of-type(2) {
+  margin-top: 16px;
   margin-right: 40px;
 }
 
 .sorting-box button {
+  text-transform: uppercase;
   margin-right: 33px;
-}
-
-.intro {
-  position: relative;
-}
-
-.intro-logo {
-  position: absolute;
-  top: 132px;
-  left: 411px;
 }
