@@ -37,6 +37,7 @@
   --special-color: #666666;
   --shadow-color: rgba(0,1,1,0.2);
   --gray-border: #E5E5E5;
+  --toggle-color: #ABABAB;
 }
 
 /* Global */
@@ -685,7 +686,7 @@ input[type="number"] {
 }
 
 .filter-form fieldset {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   border: none;
   margin: 0px;
@@ -694,15 +695,24 @@ input[type="number"] {
 }
 
 .filter-form legend {
+  font-size: 16px;
   font-weight: bold;
 }
 
 .form-container1 legend {
-  margin-bottom: 24px;
+  margin-top: -1px;
+  margin-right: 2px;
+  margin-bottom: 25px;
+  margin-left: -1px;
+}
+
+.form-container1 legend:last-child {
+  margin-left: -5px;
 }
 
 .form-container1 div {
-  margin-bottom: 23px;
+  margin-bottom: 24.5px;
+  position: relative;
 }
 
 div.wifi,
@@ -710,8 +720,55 @@ div.filter-apartments {
   margin-bottom: 36px;
 }
 
+.check-input + .check-box-on {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  margin-left: -41px;
+  background-image: url('../img/checkbox-on.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.check-input + .check-box-off {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  margin-left: -39px;
+  background-image: url('../img/checkbox-off.svg');
+  background-repeat: no-repeat;
+}
+
+.check-input + .check-box-dison {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  margin-left: -41px;
+  background-image: url('../img/checkbox-on-dis.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.check-input + .check-box-disoff {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  margin-left: -39px;
+  background-image: url('../img/checkbox-off-dis.svg');
+  background-repeat: no-repeat;
+}
+
+.swimmingpool .check-input + .check-box-on {
+  margin-left: -39px;
+}
+
+.form-container1 div {
+  padding-left: 39px;
+}
+
 .form-container2 legend {
-  margin-bottom: 10px
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .form-container2-price {
@@ -730,7 +787,7 @@ div.filter-apartments {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 64px;
-  margin-right: 57px; 
+  margin-right: 65px; 
 }
 
 .form-container2-price p:nth-of-type(1)::after {
@@ -749,19 +806,67 @@ div.filter-apartments {
   margin-left: 54px;
 }
 
+.form-container2-range {
+  position: relative;
+  margin-top: 20px;
+}
+
+.full-range {
+  height: 2px;
+  background-color: var(--alpha-white);
+}
+
+.half-range {
+  height: 2px;
+  width: 83%;
+  background-color: var(--basic-white);
+}
+
+.form-container2-range .toggle {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background-color: var(--toggle-color);
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0px 1px 1px var(--toggle-color);
+  cursor: pointer;
+}
+
+.form-container2-range .toggle-max {
+  left: 253px;
+}
+
+.form-container2-range .toggle:hover {
+  width: 6px;
+  height: 6px;
+  background-color: var(--toggle-color);
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px var(--toggle-color);
+}
+
 .filter-button {
   font-family: inherit;
   text-transform: uppercase;
   text-align: center;
   padding-top: 7px;
   padding-bottom: 7px;
-  margin-top: 32px;
-  margin-left: 86px;
+  margin-top: 34px;
+  margin-left: 85px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   color: var(--basic-white);
   background-color: transparent;
   width: 137px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .sorting-box {
