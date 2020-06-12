@@ -38,6 +38,7 @@
   --shadow-color: rgba(0,1,1,0.2);
   --gray-border: #E5E5E5;
   --toggle-color: #ABABAB;
+  --basic-sorting: #CACACA;
 }
 
 /* Global */
@@ -372,9 +373,9 @@ text-align: center;
 }
 
 .search-form p {
+  position: relative;
   padding:0;
   margin: 0;
-  position: relative;
 }
 
 .search-form input {
@@ -396,7 +397,6 @@ text-align: center;
 
 .search-form .arrival-input,
 .search-form .departure-input {
-  position: relative;
   padding-left: 12px;
   margin-bottom: 30px;
   box-sizing: border-box;
@@ -408,12 +408,20 @@ text-align: center;
   position: absolute;
   top: 7px;
   right: 7px;
+  border: none;
+  background-color: transparent;
+}
+
+.button-calendar svg {
   fill: var(--dark-gray);
 }
 
-.arrival-calendar:hover,
-.departure-calendar:hover {
+.button-calendar:hover svg {
   fill: var(--basic-black);
+}
+
+.button-calendar:active svg {
+  fill: var(--basic-blue);
 }
 
 .search-form-firstbox p {
@@ -874,6 +882,10 @@ div.filter-apartments {
   line-height: 18px;
 }
 
+.sorting-container {
+  border-bottom: 1px solid var(--gray-border);
+}
+
 .sorting-box p:nth-of-type(1) {
   font-size: 21px;
   line-height: 26px;
@@ -905,6 +917,41 @@ div.filter-apartments {
 
 .sorting-box button.current:active {
   color: var(--basic-black);
+}
+
+.sorting-buttons button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.sorting-buttons {
+  margin-top: 29px;
+  margin-right: 73px;
+}
+
+.sorting-buttons .sorting-button-up {
+  margin-right: 7px;
+}
+
+.sorting-buttons svg{
+  fill: var(--basic-sorting);
+}
+
+.sorting-button-up:hover svg,
+.sorting-button-up:focus svg,
+.sorting-button-down:hover svg,
+.sorting-button-down:focus svg {
+  fill: var(--basic-black);
+}
+
+.sorting-button-up:active svg,
+.sorting-button-down:active svg {
+  fill: var(--basic-blue);
+}
+
+.sorting-buttons svg.current {
+  fill: var(--basic-blue);
 }
 
 /* hotels */
@@ -959,6 +1006,8 @@ div.filter-apartments {
 }
 
 .hotels-list-item span {
+  position: relative;
+  
   line-height: 21px;
   color: var(--special-color);
   background-color: var(--basic-gray);
@@ -968,6 +1017,30 @@ div.filter-apartments {
   padding-left: 15px;
   padding-bottom: 3px;
   padding-right: 12px;
+}
+
+.hotels-list-item span:before {
+  position: absolute;
+  top: -75px;
+  right: 0px;
+  
+  content: " ";
+  width: 90px;
+  height: 17px;
+  background-image: url('../img/Star-group\ 4.svg');
+  background-repeat: no-repeat;
+}
+
+.hotels-list-item:nth-of-type(2) span:before {
+  background-image: url('../img/Star-group\ 3.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.hotels-list-item:nth-of-type(3) span:before {
+  background-image: url('../img/Star-group\ 2.svg');
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .hotels a.details {
@@ -1210,7 +1283,11 @@ div.filter-apartments {
   display: flex;
   justify-content: start;
   align-items: center;
-  border-bottom: 1px solid var(--gray-border);
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .sorting-box p:nth-of-type(1) {
