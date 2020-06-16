@@ -36,36 +36,30 @@
               <fieldset>
                 <legend>Инфраструктура:</legend>
                 <div class="swimmingpool">
-                  <input class="visually-hidden check-input" type="checkbox" id="swimmingpool" name="swimmingpool" checked>
-                  <span class="check-box-on"></span>
+                  <input class="visually-hidden checkbox" type="checkbox" id="swimmingpool" name="swimmingpool" checked>
                   <label for="swimmingpool">Бассейн</label>
                 </div>
                 <div class="parking">
-                  <input class="visually-hidden check-input" type="checkbox" id="parking" name="parking">
-                  <span class="check-box-off"></span>
+                  <input class="visually-hidden checkbox" type="checkbox" id="parking" name="parking">
                   <label for="parking">Парковка</label>
                 </div>
                 <div class="wifi">
-                  <input class="visually-hidden check-input" type="checkbox" id="wifi" name="wifi">
-                  <span class="check-box-off"></span>
+                  <input class="visually-hidden checkbox" type="checkbox" id="wifi" name="wifi">
                   <label for="wifi">Wi-fi</label>
                 </div>
               </fieldset>
               <fieldset>
                 <legend>Тип жилья:</legend>
                 <div class="filter-hotel">
-                  <input class="visually-hidden check-input" type="checkbox" id="filter-hotel" name="filter-hotel" checked>
-                  <span class="check-box-on"></span>
+                  <input class="visually-hidden checkbox" type="checkbox" id="filter-hotel" name="filter-hotel" checked>
                   <label for="filter-hotel">Гостиница</label>
                 </div>
                 <div class="filter-motel">
-                  <input class="visually-hidden check-input" type="checkbox" id="filter-motel" name="filter-motel" checked>
-                  <span class="check-box-on"></span>
+                  <input class="visually-hidden checkbox" type="checkbox" id="filter-motel" name="filter-motel" checked>
                   <label for="filter-motel">Мотель</label>
                 </div>
                 <div class="filter-apartments">
-                  <input class="visually-hidden check-input" type="checkbox" id="filter-apartments" name="filter-apartments" checked>
-                  <span class="check-box-on"></span>
+                  <input class="visually-hidden checkbox" type="checkbox" id="filter-apartments" name="filter-apartments" checked>
                   <label for="filter-apartments">Апартаменты</label>
                 </div>
               </fieldset>
@@ -75,8 +69,8 @@
                 <legend>Стоимость в сутки (Р):</legend>  
                 <div class="filter-range">
                   <div class="form-container2-price">
-                    <p>от 0</p>
-                    <p>до 3000</p>
+                    <input type="number" name="min-price" min="0" max="3000" placeholder="От 0"></input>
+                    <input type="number" name="max-price" min="0" max="3000" placeholder="До 3000"></input>
                   </div>
                   <div class="form-container2-range">
                     <div class="full-range">
@@ -177,7 +171,7 @@
       <footer class="contacts">
         <p class="contacts-text">
           <span>#VisitSedona</span>
-          Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a> 
+          Тел: <a href="tel:+74956660266">+7(495) 666-01-66</a> 
         </p>
   
         <section class="social">
