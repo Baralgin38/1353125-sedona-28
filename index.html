@@ -154,7 +154,7 @@
           <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
             <p>
               <label class="arrival-date" for="arrival-date">Дата заезда:</label>
-              <input class="arrival-input" type=text id="arrival-date" name="arrival-date" placeholder="24 апреля 2017">
+              <input class="arrival-input" type=text id="arrival-date" name="arrival-date" placeholder="24 апреля 2017" required>
               <button class="arrival-calendar button-calendar" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" 
                   viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 
@@ -165,7 +165,7 @@
             </p>
             <p>
               <label class="departure-date" for="departure-date">Дата выезда:</label>
-              <input class="departure-input" type="text" id="departure-date" name="departure-date" placeholder="4 июля 2017">
+              <input class="departure-input" type="text" id="departure-date" name="departure-date" placeholder="4 июля 2017" required>
               <button class="departure-calendar button-calendar" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" 
                   viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 
@@ -179,7 +179,7 @@
                 <label class="adults" for="adults">Взрослые:</label>
                 <p>
                   <button class="button-minus" type="button" aria-label="-"></button>
-                  <input type="number" id="adults" name="adults" placeholder="2">
+                  <input type="number" id="adults" name="adults" placeholder="2" required>
                   <button class="button-plus" type="button" aria-label="+"></button>
                 </p>
               </div>
@@ -187,7 +187,7 @@
                 <label class="children" for="children">Дети:</label>
                 <p>
                   <button class="button-minus" type="button" aria-label="-"></button>
-                  <input type="number" id="children" name="children" placeholder="0">
+                  <input type="number" id="children" name="children" placeholder="0" required>
                   <button class="button-plus" type="button" aria-label="+"></button>
                 </p>
               </div>
@@ -198,7 +198,7 @@
 
         <section class="map">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <img src="img/map.jpg" width="1200" height="594" alt="Карта со схемой проезда">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52385.18050596618!2d-111.83015794076775!3d34.854373381048475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1592573513771!5m2!1sru!2sru" width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
       </main>
 
@@ -271,5 +271,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/popup.js"></script>
   </body>
 </html>
