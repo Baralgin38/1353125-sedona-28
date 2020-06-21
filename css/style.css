@@ -145,6 +145,11 @@ input[type="radio"].visually-hidden {
 
  /* index */ /* about */
 
+ .about {
+  position: relative;
+  z-index: 2;
+}
+
 .about-text {
   font-size: 21px;
   font-weight: bold;
@@ -320,6 +325,12 @@ text-align: center;
 
 .search {
   line-height: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.popup-wrapper {
+  background-color: var(--basic-white);
 }
 
 .search h3{
@@ -360,16 +371,11 @@ text-align: center;
   background-color: var(--intense-brown);
 }
 
-/* search-popup */
-
-.search-popup {
-  position: relative;
-}
-
 .search-form {
   position: absolute;
+  z-index: -1;
   left: 316px;
-  
+  top: 291px;
   font-size: inherit;
   line-height: inherit;
   font-weight: bold;
@@ -563,7 +569,7 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.search-popup input[placeholder] {
+.search-form input[placeholder] {
   font-size: inherit;
   line-height: inherit;
   text-transform: inherit;
@@ -585,6 +591,10 @@ input[type="number"]::-webkit-inner-spin-button {
   background-image: url('../img/map.jpg');
   background-size: 1200px 594px;
   background-repeat: no-repeat;
+}
+
+.map iframe {
+  border: 0;
 }
 
 /* footer */
@@ -1291,7 +1301,7 @@ input[name="max-price"] {
   grid-column: 1 / -1;
 }
 
-.search {
+.popup-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1372,6 +1382,6 @@ input[name="max-price"] {
 /*animation*/
 
 @keyframes show {
-  0% { transform: translateY(-400px); }
+  0% { transform: translateY(-100%); }
   100% { transform: translateY(0); }
 }

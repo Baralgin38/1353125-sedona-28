@@ -1,4 +1,3 @@
-let searchPopup = document.querySelector(".search-popup");
 let searchForm = document.querySelector(".search-form");
 let searchButton = document.querySelector(".button-search");
 let arrivalInput = document.querySelector(".arrival-input");
@@ -6,23 +5,26 @@ let departureInput = document.querySelector(".departure-input");
 let adultsInput = document.querySelector("#adults");
 let childrenInput = document.querySelector("#children");
 
+searchForm.classList.add("popup-close");
+
 searchButton.addEventListener("click", function() {
-  if (searchPopup.classList.contains("popup-close")) {
-    searchPopup.classList.remove("popup-close");
-    searchPopup.classList.add("popup-show");
+  if (searchForm.classList.contains("popup-close")) {
+    searchForm.classList.remove("popup-close");
+    searchForm.classList.add("popup-show");
     arrivalInput.focus();
   } else {
-    searchPopup.classList.add("popup-close");
-    searchPopup.classList.remove("popup-error");
+    searchForm.classList.remove("popup-show");
+    searchForm.classList.add("popup-close");
   }
 });
 
+
 window.addEventListener("keydown", function (evt) {
   if(evt.keyCode === 27) {
-    if(searchPopup.classList.contains("popup-show")) {
+    if(searchForm.classList.contains("popup-show")) {
       evt.preventDefault();
-      searchPopup.classList.remove("popup-show");
-      searchPopup.classList.add("popup-close");
+      searchForm.classList.remove("popup-show");
+      searchForm.classList.add("popup-close");
     }
   }
 });
