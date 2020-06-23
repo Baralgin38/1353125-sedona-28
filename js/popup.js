@@ -8,6 +8,7 @@ let adultsInput = document.querySelector("#adults");
 let childrenInput = document.querySelector("#children");
 
 searchForm.classList.add("popup-close");
+searchForm.setAttribute("tabindex", -1);
 
 searchButton.addEventListener("click", function() {
   if (searchForm.classList.contains("popup-close")) {
