@@ -8,18 +8,15 @@ let adultsInput = document.querySelector("#adults");
 let childrenInput = document.querySelector("#children");
 
 searchForm.classList.add("popup-close");
-searchForm.setAttribute("tabindex", -1);
 
 searchButton.addEventListener("click", function() {
   if (searchForm.classList.contains("popup-close")) {
     searchForm.classList.remove("popup-close");
     searchForm.classList.add("popup-show");
-    searchForm.removeAttribute("tabindex");
     arrivalInput.focus();
   } else {
     searchForm.classList.remove("popup-show");
     searchForm.classList.add("popup-close");
-    searchForm.setAttribute("tabindex", -1);
   }
 });
 
@@ -30,7 +27,6 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
       searchForm.classList.remove("popup-show");
       searchForm.classList.add("popup-close");
-      searchForm.setAttribute("tabindex", -1);
     }
   }
 });
