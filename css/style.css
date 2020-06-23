@@ -109,6 +109,20 @@ input[type="radio"].visually-hidden {
   margin-bottom: 15px;
 }
 
+.site-navigation li:nth-of-type(4n+5) {
+  margin-left: 72px;
+  margin-right: 134px;
+}
+
+.site-navigation li:nth-of-type(4n+6) {
+  margin-right: 418px;
+}
+
+.site-navigation li:nth-of-type(4n+8) {
+  margin-left: 147px;
+  margin-right: 72px;
+}
+
 .site-navigation li:nth-of-type(1) {
   margin-left: 72px;
   margin-right: 134px;
@@ -744,7 +758,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   margin: 0px;
   padding: 0px;
-  margin-top: 27px;
+  margin-top: 29px;
 }
 
 .filter-form legend {
@@ -952,7 +966,7 @@ input[name="max-price"] {
   margin-top: 29px;
   margin-left: 74px;
   margin-right: 46px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .sorting-box p:nth-of-type(2) {
@@ -999,7 +1013,7 @@ input[name="max-price"] {
 }
 
 .sorting-buttons {
-  margin-top: 29px;
+  margin-top: 32px;
   margin-right: 73px;
 }
 
@@ -1039,30 +1053,13 @@ input[name="max-price"] {
   border-bottom: 1px solid var(--gray-border);
 }
 
-.hotels-list-item:nth-of-type(1) .hotels-container {
-  margin-top: 30px;
-  margin-bottom: 21px;
-}
-
-.hotels-list-item:nth-of-type(2) .hotels-container {
-  margin-top: 8px;
+.hotels-container {
+  margin-top: 21px;
   margin-bottom: 22px;
 }
 
-.hotels-list-item:nth-of-type(3) .hotels-container {
-  margin-top: 31px;
-  margin-bottom: 23px;
-}
-
-.hotels-list-item:nth-of-type(1) .hotels-container-content {
-  margin-top: -10px;
-}
-
-.hotels-list-item:nth-of-type(3) .hotels-container-content {
-  margin-top: -8px;
-}
-
 .hotels-container-img {
+  margin-top: 10px;
   margin-right: 29px;
   margin-left: 73px;
 }
@@ -1071,7 +1068,7 @@ input[name="max-price"] {
   font-size: 21px;
   font-weight: bold;
   margin: 0; 
-  margin-bottom: 7px; 
+  margin-bottom: 10px; 
 }
 
 .hotels-list-item p {
@@ -1079,20 +1076,6 @@ input[name="max-price"] {
   color: var(--dark-brown);
   margin: 0;
   margin-bottom: 15px;
-}
-
-.hotels-list-item:nth-of-type(1) h3 {
-  margin-top: 1px;
-  margin-bottom: 10px;
-}
-
-.hotels-list-item:nth-of-type(2) h3 {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.hotels-list-item:nth-of-type(2) .hotels-container-img {
-  margin-top: 22px;
 }
 
 .hotels-list-item a {
@@ -1371,12 +1354,12 @@ input[name="max-price"] {
 /*interactive*/
 
 .popup-show {
-  display: block;
   animation: show 1.5s;
 }
 
 .popup-close {
-  display: none;
+  animation: close 1.5s;
+  transform: translateY(-100%);
 }
 
 /*animation*/
@@ -1384,4 +1367,9 @@ input[name="max-price"] {
 @keyframes show {
   0% { transform: translateY(-100%); }
   100% { transform: translateY(0); }
+}
+
+@keyframes close {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
 }
