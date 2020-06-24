@@ -212,6 +212,14 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.part1-secondbox {
+  min-height: 256px;
+  background-color: var(--basic-blue);
+  background-image: url('../img/image.jpg');
+  background-repeat: no-repeat;
+  background-size: 800px 256px;
+}
+
 /* features-part2 */
 
 .part2-features-list {
@@ -236,7 +244,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   margin-top: 160px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -289,6 +297,14 @@ input[type="radio"].visually-hidden {
 
 /* features-part3 */
 
+.part3-firstbox {
+  min-height: 256px;
+  background-color: var(--basic-blue);
+  background-image: url('../img/image_2.jpg');
+  background-repeat: no-repeat;
+  background-size: 800px 256px;
+}
+
 .part3-secondbox {
   line-height: 21px;
   color: var(--basic-white);
@@ -331,7 +347,7 @@ input[type="radio"].visually-hidden {
 
 .part4-list-item h3 {
   margin: 0;
-  margin-top: 49px;
+  margin-top: 46px;
   margin-bottom: 27px;
   text-align: center;
 
@@ -610,11 +626,13 @@ input[type="radio"].visually-hidden {
 
 input[type="number"] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 .search-form input[placeholder] {
@@ -740,9 +758,7 @@ input[type="number"]::-webkit-inner-spin-button {
   opacity: .3;
 }
 
-.footer-logo-box p {
-  display: inline-block;
-}
+
 
 .footer-logo-box {
   display: flex;
@@ -795,7 +811,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 0px;
   border: none;
   margin: 0px;
-  margin-top: 29px;
+  margin-top: 27px;
 
   font-size: 14px;
   font-weight: normal;
@@ -1115,6 +1131,7 @@ input[name="max-price"] {
 }
 
 .hotels-container-img {
+  flex-shrink: 0;
   margin-top: 10px;
   margin-right: 29px;
   margin-left: 73px;
@@ -1150,11 +1167,13 @@ input[name="max-price"] {
 .hotels-container-firstbox,
 .hotels-container-secondbox {
   display: inline-block;
+  vertical-align: bottom;
 }
 
 .hotels-list-item span {
   position: relative;
   align-self: flex-end;
+  flex-shrink: 0;
 
   padding-top: 3px;
   padding-left: 15px;
@@ -1332,7 +1351,7 @@ input[name="max-price"] {
 
 .features-container {
   display: grid;
-  grid-template-rows: 256px 330px 256px 256px;
+  grid-template-rows: minmax(256px) minmax(330px) minmax(256px) minmax(256px);
   grid-template-columns: 1fr 1fr 1fr;
 }
 
