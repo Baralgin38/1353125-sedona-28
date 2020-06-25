@@ -1195,18 +1195,18 @@ input[name="max-price"] {
   
   width: 90px;
   height: 17px;
-  background-image: url('../img/star-group4.svg');
+  background-image: url('../img/star_group4.svg');
   background-repeat: no-repeat;
 }
 
 .hotels-list-item:nth-of-type(2) span:before {
-  background-image: url('../img/star-group3.svg');
+  background-image: url('../img/star_group3.svg');
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .hotels-list-item:nth-of-type(3) span:before {
-  background-image: url('../img/star-group2.svg');
+  background-image: url('../img/star_group2.svg');
   background-repeat: no-repeat;
   background-position: right;
 }
