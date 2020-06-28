@@ -624,13 +624,13 @@ input[type="radio"].visually-hidden {
   background-color: var(--intense-blue);
 }
 
-input[type="number"] {
+.input-number {
   -moz-appearance: textfield;
   appearance: textfield;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.input-nimber::-webkit-outer-spin-button,
+.input-nimber::-webkit-inner-spin-button {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
